@@ -19,9 +19,54 @@
             </nav>
         </header>
         <main id="main-content">
+            <img src="images/bakery-logo_c.png" width="100" height="auto">
+            <!--logo-->
             <h2>Inquiry and pre-order</h2>
+            <!--inquiry and pre-request form-->
+                <form>
+                    <fieldset>
+                        <legend>Personal Info:</legend>
+                        <label for="full_name">Full Name (First and Last):</label>
+                            <input type="text" id="full_name" name="full_name" required placeholder="e.g. John Doe"><br>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required placeholder="e.g. johndoe@email.com"><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Your request:</legend>
+                        <label>Pre-order:
+                            <input type="radio" name="form_options" value="pre-order">
+                        </label><br>
+                        <label>Inquiry:
+                            <input type="radio" name="form_options" value="inquiry">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Product Details:</legend>
+                        <label>Date:
+                            <input type="date" name="date">
+                        </label><br>
+                        <label>Item Details (5-500 characters):
+                            <textarea name="item_details" rows=4 cols="40" minlength="5" maxlength="500" required placeholder="Please place your order or inquiry here"></textarea>
+                        </label><br>
+                        <label>Allergy Notes:
+                            <textarea name="allergy_notes" rows="2" cols="40" minlength="" maxlength="500" placeholder="Tell us about your allergy concerns!"></textarea>
+                        </label>
+                    </fieldset>
+                    <button type="submit">Send order/inquiry</button>
+                </form>
             <h2>Location</h2>
+            <!--location information-->
+                <p>Want to come see us? We are located at:<br>
+                1234 Real street, Realsville, RS 12345<br>
             <h2>Hours of Operation</h2>
+            <!--hours of operation-->
+                <p> We are open daily! Stop in on your way to work, or grab a pastry for that special someone on your way home<br>
+                    <ul>
+                        <li>Sunday:6:00 AM-10:00 AM</li>
+                        <li>Monday-Friday:6:00 Am-5:00 PM</li>
+                        <li>Saturday:7:00 AM-1:00 Pm</li>
+                    </ul>
+                </p>
         </main>
         <footer>
             <p>&copy; 2026 North Star Bakery</p>
