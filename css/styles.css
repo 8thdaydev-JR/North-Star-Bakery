@@ -1,0 +1,11 @@
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+body{
+    font-family: Georgia, "lora", serif;
+}
+h1, h2, h3 {
+    font-family: "lora", Georgia, serif;
+}
