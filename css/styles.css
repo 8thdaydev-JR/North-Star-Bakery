@@ -3,6 +3,9 @@
 *::after {
 box-sizing: border-box;
 }
+body {
+    background-color:lightyellow
+}
 body{
     font-family: Georgia, "lora", serif;
 }
