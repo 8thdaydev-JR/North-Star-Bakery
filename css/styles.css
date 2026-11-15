@@ -4,11 +4,22 @@
 box-sizing: border-box;
 }
 body {
-    background-color:lightyellow
+    background-color: #f8f1e7;
 }
 body{
     font-family: Georgia, "lora", serif;
 }
 h1, h2, h3 {
     font-family: "lora", Georgia, serif;
+}
+h1, h2, h3 {
+    color: rgb(37, 22, 0);
+}
+input:required {
+    border-color: rgba(204, 171, 80, 0.5);
+    background-color: rgba(204, 171, 80, 0.5);
+}
+textarea:required {
+    border-color: rgba(204, 171, 80, 0.5);
+    background-color: rgba(204, 171, 80, 0.5);
 }
