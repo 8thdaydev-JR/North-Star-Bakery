@@ -30,23 +30,23 @@
             <!--inquiry and pre-request form-->
                 <form action="/submit_contact" method="post">
                     <fieldset>
-                        <legend>Personal Info:</legend>
+                        <h3>Personal Info:</h3>
                         <label for="full_name">Full Name (First and Last):</label>
                             <input type="text" id="full_name" name="full_name" required placeholder="e.g. John Doe"><br>
                             <label for="email">Email:</label>
                             <input type="email" id="email" name="email" required placeholder="e.g. johndoe@email.com"><br>
                     </fieldset>
-                    <fieldset>
-                        <legend>Your request:</legend>
+                    <section>
+                        <h3>Your request:</h3>
                         <label>Pre-order:
                             <input type="radio" name="form_options" value="pre-order" required>
                         </label><br>
                         <label>Inquiry:
                             <input type="radio" name="form_options" value="inquiry">
                         </label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Product Details:</legend>
+                    </section>
+                    <section>
+                        <h3>Product Details:</h3>
                         <label>Date:
                             <input type="date" name="date">
                         </label><br>
@@ -56,7 +56,7 @@
                         <label>Allergy Notes (max 500 characters):
                             <textarea name="allergy_notes" rows="2" cols="40" maxlength="500" placeholder="Tell us about your allergy concerns!"></textarea>
                         </label>
-                    </fieldset>
+                    </section>
                     <button type="submit">Send order/inquiry</button>
                 </form>
             </section>
