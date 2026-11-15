@@ -10,10 +10,15 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
+        <div class="container">
         <header>
-            <h1>North Star Bakery</h1>
-            <a href="#main-content">Skip to content</a>
-            <nav aria-label="primary">
+            <section class="header">
+                <img src="images/bakery-logo_c.png" width="100" height="auto" alt="North Star Bakery logo">
+                <!--logo-->
+                <h1>North Star Bakery</h1>
+            </section>
+            <a href="#main-content" class="mc-link">Skip to content</a>
+            <nav class="nav-link" aria-label="primary">
                 <ul>
                     <li><a href="index.html" aria-current="page">Home</a></li>
                     <li><a href="products.html">Bakery Products</a></li>
@@ -23,8 +28,6 @@
             </nav>
         </header>
         <main id="main-content">
-            <img src="images/bakery-logo_c.png" width="100" height="auto">
-            <!--logo-->
             <section>
                 <h2>Welcome to North Star Bakery!</h2>
                 <!--welcome message-->
@@ -37,7 +40,7 @@
                     <p>Allow us to welcome you to North Star Bakery.</p>
             </section>
             <section>
-                <h2>What we're known for</h2>
+                <h2>What we're known for:</h2>
                 <!--"what we're known for" summary-->
                 <img src="images/bakery-bread_c.png" alt="loaves of bread in a display case" width="200" height="auto">
                 <!--product image-->
@@ -47,7 +50,7 @@
                     </p>
             </section>
             <section>
-                <h2>Hours and location</h2>
+                <h2>Hours and location:</h2>
                 <!--hours and location snippet-->
                 <p>Want to come see us? We are located at:<br>
                 1234 Real street, Realsville, RS 12345<br>
@@ -62,7 +65,7 @@
             <section>
                 <h2>Baked goodie of the week!</h2>
                 <!--featured item of the week-->
-                    <h3>Mix 'n' Match Cookies!</h3>
+                    <h3 class="featured-item">Mix 'n' Match Cookies</h3>
                     <figure>
                         <picture>
                             <source srcset="images/bakery-feature-large_c.png" media="(min-width:700px)">
@@ -82,5 +85,6 @@
         <footer>
             <p>&copy; 2026 North Star Bakery</p>
         </footer>
+        </div>
     </body>
 </html>

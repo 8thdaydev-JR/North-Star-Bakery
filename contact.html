@@ -10,10 +10,15 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
+        <div class="container">
         <header>
-            <h1>Contact Us!</h1>
-            <a href="#main-content">Skip to content</a>
-            <nav aria-label="primary">
+            <section class="header">
+                <img src="images/bakery-logo_c.png" width="100" height="auto" alt="North Star Bakery logo">
+                <!--logo-->
+                <h1>Contact Us</h1>
+            </section>
+            <a href="#main-content" class="mc-link">Skip to content</a>
+            <nav class="nav-link" aria-label="primary">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Bakery Products</a></li>
@@ -23,21 +28,19 @@
             </nav>
         </header>
         <main id="main-content">
-            <img src="images/bakery-logo_c.png" width="100" height="auto">
-            <!--logo-->
             <section>
             <h2>Inquiry and pre-order</h2>
             <!--inquiry and pre-request form-->
-                <form action="/submit_contact" method="post">
-                    <fieldset>
+                <form action="/submit_contact" method="post" class="request-form">
+                    <section class="personal-info">
                         <h3>Personal Info:</h3>
-                        <label for="full_name">Full Name (First and Last):</label>
+                        <label for="full_name" class="required-info">Full Name (First and Last):</label>
                             <input type="text" id="full_name" name="full_name" required placeholder="e.g. John Doe"><br>
-                            <label for="email">Email:</label>
+                            <label for="email" class="required-info">Email:</label>
                             <input type="email" id="email" name="email" required placeholder="e.g. johndoe@email.com"><br>
-                    </fieldset>
-                    <section>
-                        <h3>Your request:</h3>
+                    </section>
+                    <section class="personal-info">
+                        <h3 class="required-info">Your request:</h3>
                         <label>Pre-order:
                             <input type="radio" name="form_options" value="pre-order" required>
                         </label><br>
@@ -45,19 +48,19 @@
                             <input type="radio" name="form_options" value="inquiry">
                         </label>
                     </section>
-                    <section>
+                    <section class="product-details">
                         <h3>Product Details:</h3>
                         <label>Date:
                             <input type="date" name="date">
                         </label><br>
-                        <label>Item Details (5-500 characters):
+                        <label class="required-info">Item Details (5-500 characters):
                             <textarea name="item_details" rows="4" cols="40" minlength="5" maxlength="500" required placeholder="Please place your order or inquiry here"></textarea>
                         </label><br>
                         <label>Allergy Notes (max 500 characters):
                             <textarea name="allergy_notes" rows="2" cols="40" maxlength="500" placeholder="Tell us about your allergy concerns!"></textarea>
                         </label>
-                    </section>
-                    <button type="submit">Send order/inquiry</button>
+                        </section>
+                    <button type="submit" class="submit-btn">Send order/inquiry</button>                  
                 </form>
             </section>
             <section>
