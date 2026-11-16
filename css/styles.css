@@ -51,6 +51,10 @@ h3 {
 input:required {
     background-color: var(--carmel);
 }
+textarea {
+    width: 100%;
+    max-width: 100%;
+}
 textarea:required {
     background-color: var(--carmel);
 }
