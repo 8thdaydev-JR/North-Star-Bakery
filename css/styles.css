@@ -52,8 +52,9 @@ input:required {
     background-color: var(--carmel);
 }
 textarea {
+    display: block;
     width: 100%;
-    max-width: 100%;
+    min-width: 0;
 }
 textarea:required {
     background-color: var(--carmel);
