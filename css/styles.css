@@ -10,6 +10,7 @@ box-sizing: border-box;
     --darkbrown: rgb(37, 22, 0);
     --carmel: #c58b55;
     --sagegreen: #879078;
+    --cranberry: #702d3b;
 }
 body {
     margin: 0;
@@ -48,10 +49,10 @@ h3 {
     font-size: 1.25rem;
 }
 input:required {
-    background-color: #C18A45;
+    background-color: var(--carmel);
 }
 textarea:required {
-    background-color: #C18A45;
+    background-color: var(--carmel);
 }
 header {
     border-bottom: 2px solid var(--carmel);
@@ -62,12 +63,12 @@ footer {
 }
 a {
     text-decoration: none;
-    color: #702d3b;
+    color: var(--cranberry);
 }
 a:hover,
 a:focus-visible {
-    border: 2px solid #702d3b;
-    background-color: #702d3b;
+    border: 2px solid var(--cranberry);
+    background-color: var(--cranberry);
     color: var(--cream);
     transition: background-color 0.2s, color 0.2s;
 }
@@ -195,7 +196,7 @@ label {
     grid-column: 2;
 }
 .required-info {
-    text-decoration: underline 2px #702d3b;
+    text-decoration: underline 2px var(--cranberry);
 }
 .product-details {
     grid-column: 2;
@@ -205,5 +206,8 @@ label {
     grid-column: 2;
     padding: 10px 10px;
     margin: 10px 10px;
+}
+.required-input:valid {
+    background-color: var(--sagegreen);
 }
 /*ID selectors*/
